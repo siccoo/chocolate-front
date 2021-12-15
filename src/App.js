@@ -1,6 +1,8 @@
 import './App.css';
 import Header from './components/Header';
 import SearchInput from './components/SearchInput';
+import Tabs from "./components/Tabs";
+import AudioList from "./components/AudioList"
 
 function App() {
   return (
