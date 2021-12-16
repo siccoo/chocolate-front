@@ -4,7 +4,7 @@
 // E.g: Given an Array1 = [1, 3, 6, 4, 1, 2] returns 5, and Array2 = [5, -1, -3] returns 1.
 
 const A = [-1, -4];
-function solution(A) {
+function smallestNonRecurringNumber(A) {
     let max = A.reduce((acc, val) => acc > val ? acc : val);
     let missing = 1;
     for (let i = max + 1; i > 0; i--) {
@@ -15,4 +15,4 @@ function solution(A) {
     }
     return missing; 
 }
-console.log(solution(A));
+console.log(smallestNonRecurringNumber(A));
