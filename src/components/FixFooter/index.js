@@ -175,6 +175,22 @@ const FixFooter = ({ trackIndex, audioList }) => {
                 <span>Profile</span>
               </div>
             </a>
+            <a>
+              <div>
+                <img src={homeIcon} />
+              </div>
+              <div>
+                <span>Home</span>
+              </div>
+            </a>
+            <a>
+              <div>
+                <img src={userIcon} />
+              </div>
+              <div>
+                <span>Profile</span>
+              </div>
+            </a>
           </div>
         </>
       )}
