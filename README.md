@@ -7,9 +7,12 @@ integer in a given Array
 
 ##### To see, view and check the app, you have to install node modules and start the app
 
-```bash
-$ npm install or yarn install
-$ npm start or yarn start
-```
+## Setup
+
+- Clone the repository
+- `cd 'chocolate-front'` and run `npm install`
+- After installations, run `npm start` to start the application on `http://localhost:3000`
+
+The application opens with beautiful interface that allows you to interact with it. 
 
 ##### For Exercise 1, read the file at Exercise.js
