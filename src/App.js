@@ -1,13 +1,11 @@
-import {useState, useEffect} from "react";
-import Header from './components/Header';
-import SearchInput from './components/SearchInput';
-import Tabs from "./components/Tabs";
+import { useEffect, useState } from "react";
 import AudioList from "./components/AudioList";
+import Header from "./components/Header";
+import SearchInput from "./components/SearchInput";
+import Tabs from "./components/Tabs";
+import "./App.css";
 import FixFooter from "./components/FixFooter";
-
 import { baseUrl } from "./config";
-
-import './App.css';
 
 function App() {
   const [list, setList] = useState(false);
@@ -44,22 +42,27 @@ function App() {
     fetch(`${baseUrl}/song`)
       .then((res) => res.json())
       .then((jsonResp) => {
-        // console.log({ jsonResp });
+        console.log({ jsonResp });
         setAppData(jsonResp.appData);
       })
       .catch((error) => {
-        // console.log({ error });
+        console.log({ error });
       });
   }, []);
 
   return (
     <div className="App m-20">
-      <Header/>
-      <h2 className="mtb-20 app-quote">Find your best music of Chocolate city studio</h2>
+      <Header />
+      <h2 className="mtb-20 app-quote">Find the best music for your code</h2>
       <SearchInput />
       <Tabs onItemSelect={onItemSelect} tabData={appData["homeScreen"]} />
-      {list && (<AudioList audioList={audioList}
-          onTrackSelect={onTrackSelect} onBackButtonPress={onBackButtonPress} />)}
+      {list && (
+        <AudioList
+          audioList={audioList}
+          onTrackSelect={onTrackSelect}
+          onBackButtonPress={onBackButtonPress}
+        />
+      )} 
 
       <FixFooter trackIndex={trackIndex} audioList={audioList} />
     </div>
