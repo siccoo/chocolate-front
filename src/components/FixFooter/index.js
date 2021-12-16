@@ -13,6 +13,7 @@ import {
 } from "../../assets";
 import { baseUrl } from "../../config";
 import AudioPlayer from "./AudioPlayer";
+
 import "./style.css";
 
 const FixFooter = ({ trackIndex, audioList }) => {

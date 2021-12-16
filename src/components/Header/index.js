@@ -2,6 +2,8 @@ import React from "react";
 import ChocoLogo from "../../assets/choco-logo.png";
 import { searchIcon } from "../../assets";
 
+import "./style.css";
+
 const index = (props) => {
   return (
     <header className="header flex justify-sb">
