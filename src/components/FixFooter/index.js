@@ -8,6 +8,8 @@ import {
   playGreyIcon,
   prevIcon,
   userIcon,
+  tweetIcon,
+  notifyIcon
 } from "../../assets";
 import { baseUrl } from "../../config";
 import AudioPlayer from "./AudioPlayer";
@@ -177,18 +179,18 @@ const FixFooter = ({ trackIndex, audioList }) => {
             </a>
             <a>
               <div>
-                <img src={homeIcon} />
+                <img src={tweetIcon} />
               </div>
               <div>
-                <span>Home</span>
+                <span>Tweet</span>
               </div>
             </a>
             <a>
               <div>
-                <img src={userIcon} />
+                <img src={notifyIcon} />
               </div>
               <div>
-                <span>Profile</span>
+                <span>Report</span>
               </div>
             </a>
           </div>
